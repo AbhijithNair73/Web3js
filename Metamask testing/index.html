@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 testing</title>
+</head>
+<body>
+    <h1>Web3 testing</h1>
+    <div>
+       <p1>Wallet Address: <span id="walletAddr"></span></p1>
+        <br>
+       <button onclick="SignatureFunc()">Generate Signature</button>
+       <br>
+       <span>Address recovered from signature: </span>
+       <pr id="recovery"></pr>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="./metamask.js"></script>
+</html>
