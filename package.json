@@ -20,5 +20,8 @@
   "devDependencies": {
     "web3": "^1.7.4",
     "web3.js-browser": "^0.2.0"
+  },
+  "dependencies": {
+    "solc": "^0.8.15"
   }
 }
