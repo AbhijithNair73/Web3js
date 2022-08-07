@@ -9,10 +9,10 @@ contract lottery {
     mapping(uint => address[]) public bettersStake;
     address public owner;
 
-    constructor () {
+    constructor (uint _minBetters, uint _biddingLimit) {
         owner = msg.sender;
-        MINIMUM_BETTERS = 5;
-        BIDDING_NUMBER_LIMIT = 10;
+        MINIMUM_BETTERS = _minBetters;
+        BIDDING_NUMBER_LIMIT = _biddingLimit;
     }
 
     modifier onlyOwner{
